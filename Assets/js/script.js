@@ -1,3 +1,29 @@
+var container = document.getElementById('container1');
+var btn = document.getElementById('btn');
+var latEl = document.getElementById('lat');
+var lonEl = document.getElementById('lon');
+var currentLat = '';
+var currentLon = '';
+
+
+function run(){
+    if(navigator.geolocation){
+        navigator.geolocation.getCurrentPosition(showCoordinates);
+    } else {
+        latEl.textContent = 'Not available';
+        lonEl.textContent = 'Not available';
+    }
+    
+};
+
+function showCoordinates(myPosition){
+    latEl.textContent = myPosition.coords.latitude;
+    lonEl.textContent = myPosition.coords.longitude;
+    console.log(typeof `${myPosition.coords.latitude}`);
+    
+}
+btn.addEventListener('click', run);
+
 
 var ipGeolocationAPI = "946d9ece5fe4454391cdd36952b69d01"
 
@@ -23,24 +49,3 @@ fetch(sunriseSunsetApi)
 
 
 
-// var container = document.getElementById('container1');
-// var btn = document.getElementById('btn');
-// var latEl = document.getElementById('lat');
-// var lonEl = document.getElementById('lon');
-
-
-// function run(){
-//     if(navigator.geolocation){
-//         navigator.geolocation.getCurrentPosition(showCoordinates);
-//     } else {
-//         latEl.textContent = 'Not available';
-//         lonEl.textContent = 'Not available';
-//     }
-    
-// };
-
-// function showCoordinates(myPosition){
-//     latEl.textContent = myPosition.coords.latitude;
-//     lonEl.textContent = myPosition.coords.longitude;
-// }
-// btn.addEventListener('click', run);

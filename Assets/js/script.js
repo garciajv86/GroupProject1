@@ -20,3 +20,27 @@ fetch(sunriseSunsetApi)
 
 })
 
+
+
+
+// var container = document.getElementById('container1');
+// var btn = document.getElementById('btn');
+// var latEl = document.getElementById('lat');
+// var lonEl = document.getElementById('lon');
+
+
+// function run(){
+//     if(navigator.geolocation){
+//         navigator.geolocation.getCurrentPosition(showCoordinates);
+//     } else {
+//         latEl.textContent = 'Not available';
+//         lonEl.textContent = 'Not available';
+//     }
+    
+// };
+
+// function showCoordinates(myPosition){
+//     latEl.textContent = myPosition.coords.latitude;
+//     lonEl.textContent = myPosition.coords.longitude;
+// }
+// btn.addEventListener('click', run);

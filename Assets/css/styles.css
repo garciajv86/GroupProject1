@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+/* For Tablets */
+@media only screen and (min-width: 600px) {
+    
+}
+/*  For Desktop */
+@media screen and (min-width: 768px){
+    
+}
+
+

@@ -40,7 +40,13 @@ function error(err) {
     console.warn(`ERROR(${err.code}): ${err.message}`);
   }
 
-navigator.geolocation.getCurrentPosition(success, error);
+// Event Listener
+btn.addEventListener('click', function() {
+
+      navigator.geolocation.getCurrentPosition(success, error);
+
+  })
+
      
 
 

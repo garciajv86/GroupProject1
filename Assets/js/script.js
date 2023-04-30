@@ -1,6 +1,8 @@
 var ipGeolocationApiKey = "946d9ece5fe4454391cdd36952b69d01"
 var container = document.getElementById('container1');
 var btn = document.getElementById('btn');
+var sunriseTime = document.getElementById('sunriseTime');
+var firstLight = document.getElementById('firstLight');
 //$ curl 'https://api.ipgeolocation.io/ipgeo?apiKey=API_KEY'
 
 
@@ -38,6 +40,9 @@ function success() {
 
             console.log(data);
             console.log(data.results.sunrise);
+            sunriseTime.textContent=data.results.sunrise;
+            firstLight.textContent=data.results.first_light;
+
 
     })
     })

@@ -3,6 +3,8 @@ var container = document.getElementById('container1');
 var btn = document.getElementById('btn');
 var sunriseTime = document.getElementById('sunriseTime');
 var firstLight = document.getElementById('firstLight');
+var sunsetTime= document.getElementById('sunsetTime');
+var lastLight=document.getElementById('lastLight');
 //$ curl 'https://api.ipgeolocation.io/ipgeo?apiKey=API_KEY'
 
 
@@ -42,6 +44,8 @@ function success() {
             console.log(data.results.sunrise);
             sunriseTime.textContent=data.results.sunrise;
             firstLight.textContent=data.results.first_light;
+            sunsetTime.textContent=data.results.sunset;
+            lastLight.textContent=data.results.last_light;
 
 
     })

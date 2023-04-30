@@ -9,43 +9,68 @@
 </head>
 
 <body>
+    <!-- .hero -->
+    <section class="hero">
+        <div class="hero-body">
+            
+          <form id="container1" class="container is-fluid">
 
-    <form id="container1" class="container is-fluid">
-
-        <div class="notification is-primary">
+            <div class="notification is-info">
 
         <input id="city-input" class="city" type="text" placeholder="City Name">
 
-        <button id="btn">Find Location</button>
+                <button id="btn">Find Location</button>
         
-        </div>
+                 </div>
 
-    </form>
+             </form>  
+            
+            </div>
+
+        </section>
+        <!-- .hero -->
     
     <main id="main-page">
+        <!-- section -->
+        <section id='main' class="section">
 
-        <section id='main' class="main-container">
+            <!-- container -->
+            <div class="container">
+                <!-- title with notification grey -->
+                <div class="notification is">
+                    
+                    <h1 class="title"><span>City Name </span>First Light, Sunrise & Sunset Times</h1>
+                    <h2 class="today">Sunrise and Sunset Today</h2>
+
+                </div>
+                <!-- title with notification grey -->
+
             
-            <h1 class="title"><span>City Name </span>First Light, Sunrise & Sunset Times</h1>
-            <h2 class="today">Sunrise and Sunset Today</h2>
-
-            <div id="sunrise">
+            <div id="sunrise" class="columns">
+                <div class="column">
                 <h3>Sunrise Today</h3>
                 <img src="./Assets/images/apple-touch-icon.png" alt="sunrise image" class="sunrise">
                 <strong class="sunrise-time">7:00am</strong>
                 <br>
                 <strong class="first-light">First light: 6:00am</strong>
+                </div>
             </div>
             
-            <div id="sunset">
+            <div id="sunset" class="columns">
+                <div class="column">
                 <h3>Sunset Today</h3>
                 <img src="./Assets/images/apple-touch-icon.png" alt="sunrise image" class="sunrise">
                 <strong class="sunrise-time">8:00pm</strong>
                 <br>
                 <strong class="first-light">Last light: 8:30pm</strong>
+                </div>
+            </div>
+
+            <!-- container -->
             </div>
             
-        </main>
+        </section>
+        <!-- section -->
 
         <div class="daylength">Day Length Today: 12 hours, 40 minutes</div>
         

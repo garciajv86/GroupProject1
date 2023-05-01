@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FontAwesome API link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bulma -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <!-- Realitive CSS Style Link -->
+    <link rel="stylesheet" href="./Assets/css/styles.css">
     <title>Sunrise/Sunset App</title>
 </head>
 
@@ -27,7 +32,7 @@
 
                     <input id="city-input" class="city" type="text" placeholder="City Name">
 
-                    <button id="btn" class="button is-small">Find Location!</button>
+                    <button id="btn" class="button" type="button"><i class='fa fa-search' aria-hidden="true"></i></button>
         
                  </div>
 
@@ -57,26 +62,26 @@
                 
                 <div class="columns">
                 <!-- column -->
-                <div id="sunrise" class="column">
-                    <div class=" -">
-                    <h3 class="is-size-3">Sunrise Today</h3>
-                    <img src="./Assets/images/apple-touch-icon.png" alt="sunrise image" class="sunrise" style="max-width: 160px;">
-                    <strong class="sunrise-time">Sunrise: <span id='sunriseTime'>7:00am</span></strong>
-                    <br>
-                    <strong class="first-light">First light: <span id="firstLight">6:00am</span></strong>
+                    <div id="sunrise" class="column sunrise">
+                        <div class=" -">
+                        <h3 class="is-size-3">Sunrise Today</h3>
+                        <img src="./Assets/images/apple-touch-icon.png" alt="sunrise image" class="sunrise" style="max-width: 160px;">
+                        <strong class="sunrise-time">Sunrise: <span id='sunriseTime'>7:00am</span></strong>
+                        <br>
+                        <strong class="first-light">First light: <span id="firstLight">6:00am</span></strong>
+                        </div>
                     </div>
-                </div>
-                <!-- column -->
-                
-                <div id="sunset" class="column">
-                    <div class=" -">
-                    <h3 class="is-size-3">Sunset Today</h3>
-                    <img src="./Assets/images/sun-set-icon.png" alt="sunrise image" class="sunrise" style="max-width: 160px;">
-                    <strong class="sunrise-time">Sunset: <span id='sunsetTime'>8:00pm</span></strong>
-                    <br>
-                    <strong class="first-light">Last light: <span id="lastLight">8:30pm</span></strong>
+                    <!-- column -->
+                    
+                    <div id="sunset" class="column sunset">
+                        <div class=" -">
+                        <h3 class="is-size-3">Sunset Today</h3>
+                        <img src="./Assets/images/sun-set-icon.png" alt="sunrise image" class="sunrise" style="max-width: 160px;">
+                        <strong class="sunrise-time">Sunset: <span id='sunsetTime'>8:00pm</span></strong>
+                        <br>
+                        <strong class="first-light">Last light: <span id="lastLight">8:30pm</span></strong>
+                        </div>
                     </div>
-                </div>
                 <!-- column -->
                 </div>
             <!-- container -->
@@ -85,8 +90,11 @@
         </section>
         <!-- section -->
 
-        <div class="daylength">Day Length Today: 12 hours, 40 minutes</div>
-        
+        <div class="dayLength-container">
+
+            <div class="dayLength">Day Length Today: 12 hours, 40 minutes</div>
+            
+        </div>
     </main>
 
 

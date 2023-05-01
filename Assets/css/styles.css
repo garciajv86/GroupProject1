@@ -1,11 +1,85 @@
+:root {
+    --theme: #3e8ed0;
+    --text-theme: rgb(252, 194, 4);
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+body {
+    background-image: url(../Images/pexels-pixabay-53594.jpg);
+    background-size: cover;
+    height: 100vh;
+}
 
+.city {
+    position: relative;
+    border: none;
+    padding: 5px 6px;
+    border-radius: 20px;
+}
 
+.button {
+    border: none;
+    position: absolute;
+    padding: 0px 5px 0px 5px;
+    height: 20px;
+    top: 23px;
+    left: 155px;
+    border-radius: 20px;
+}
+
+button:hover {
+    background-color: aqua;
+}
+
+.notification {
+    background-color: var(--theme);
+    color: white;
+}
+
+#cityName {
+    color:cyan;
+}
+
+.today {
+    color: var(--text-theme);
+    font-size: 28px;
+}
+
+.dayLength-container {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.dayLength {
+    background-color: var(--theme);
+    width: 50%;
+    color: white;
+    padding: 5px 0px 5px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.sunset {
+    display: flex;
+    justify-content: end;
+}
+
+.sunrise, .sunset {
+    background-color: var(--theme);
+    color: var(--text-theme);
+}
+
+.sunrise-time, .first-light {
+    display: flex;
+    margin-left: 15px;
+}
 
 
 

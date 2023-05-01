@@ -24,27 +24,28 @@ function success() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data[0].lat);
-      console.log(data[0].lon);
+      return data[0];
+    })
 
-      var sunriseSunsetApi = `https://api.sunrisesunset.io/json?lat=${data[0].lat}&lng=${data[0].lon}&timezone=UTC&date=today`;
+    .then(function (location) {
+      var sunriseSunsetApi = `https://api.sunrisesunset.io/json?lat=${location.lat}&lng=${location.lon}&timezone=UTC&date=today`;
 
-      fetch(sunriseSunsetApi)
-        .then((Response) => {
-          if (!Response.ok) throw new Error("error!");
+      return fetch(sunriseSunsetApi);
+    })
+    .then((Response) => {
+      if (!Response.ok) throw new Error("error!");
 
-          return Response.json();
-        })
-        .then((data) => {
-          console.log(data);
-          console.log(data.results.sunrise);
-          sunriseTime.textContent = data.results.sunrise;
-          firstLight.textContent = data.results.first_light;
-          sunsetTime.textContent = data.results.sunset;
-          lastLight.textContent = data.results.last_light;
-          dayLength.textContent = `Day Length Today: ${data.results.day_length}`;
-          mainPage.style.display = "block";
-        });
+      return Response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      console.log(data.results.sunrise);
+      sunriseTime.textContent = data.results.sunrise;
+      firstLight.textContent = data.results.first_light;
+      sunsetTime.textContent = data.results.sunset;
+      lastLight.textContent = data.results.last_light;
+      dayLength.textContent = `Day Length Today: ${data.results.day_length}`;
+      mainPage.style.display = "block";
     });
 }
 

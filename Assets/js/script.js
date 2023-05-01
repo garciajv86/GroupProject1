@@ -5,6 +5,7 @@ var sunriseTime = document.getElementById('sunriseTime');
 var firstLight = document.getElementById('firstLight');
 var sunsetTime= document.getElementById('sunsetTime');
 var lastLight=document.getElementById('lastLight');
+var cityName = document.getElementById('cityName');
 //$ curl 'https://api.ipgeolocation.io/ipgeo?apiKey=API_KEY'
 
 
@@ -13,6 +14,8 @@ function success() {
 
     var city = document.getElementById('city-input');
     var city = city.value;
+    cityName.textContent = city.toUpperCase();
+
 
     var geoCodingApi = `https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=20&appid=a7fc7c3921309a588e45475792082481`;
 

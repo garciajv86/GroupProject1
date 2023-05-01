@@ -6,6 +6,8 @@ var firstLight = document.getElementById('firstLight');
 var sunsetTime= document.getElementById('sunsetTime');
 var lastLight=document.getElementById('lastLight');
 var cityName = document.getElementById('cityName');
+var dayLength = document.getElementById('dayLength');
+var mainPage = document.getElementById('main-page');
 //$ curl 'https://api.ipgeolocation.io/ipgeo?apiKey=API_KEY'
 
 
@@ -45,10 +47,12 @@ function success() {
 
             console.log(data);
             console.log(data.results.sunrise);
-            sunriseTime.textContent=data.results.sunrise;
-            firstLight.textContent=data.results.first_light;
-            sunsetTime.textContent=data.results.sunset;
-            lastLight.textContent=data.results.last_light;
+            sunriseTime.textContent = data.results.sunrise;
+            firstLight.textContent = data.results.first_light;
+            sunsetTime.textContent = data.results.sunset;
+            lastLight.textContent = data.results.last_light;
+            dayLength.textContent = `Day Length Today: ${data.results.day_length}`;
+            mainPage.style.display = 'block';
 
 
     })

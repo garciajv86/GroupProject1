@@ -20,7 +20,7 @@
 
         <div class="hero-body">
             <p class="title">
-                Group 6 project (placeholder)
+                Sunrise/Sunset Times By City
               </p>
               <p class="subtitle">
                 App for sunrise and sunset. Search for a city watch the magic!
@@ -54,7 +54,7 @@
                 <!-- title with notification grey -->
                 <div class="notification ">
                     
-                    <h1 class="title"><span id="cityName">City Name </span> First Light, Sunrise & Sunset Times</h1>
+                    <h1 class="title"><span id="cityName"> </span> First Light, Sunrise & Sunset Times</h1>
                     <h2 class="today">Sunrise and Sunset Today</h2>
 
                 </div>
@@ -65,10 +65,10 @@
                     <div id="sunrise" class="column sunrise">
                         <div class=" -">
                         <h3 class="is-size-3">Sunrise Today</h3>
-                        <img src="./Assets/images/apple-touch-icon.png" alt="sunrise image" class="sunrise" style="max-width: 160px;">
-                        <strong class="sunrise-time">Sunrise: <span id='sunriseTime'>7:00am</span></strong>
+                        <img src="./Assets/images/apple-touch-icon.png" alt="sunrise image" class="sunrise sunriseImg" style="max-width: 160px;">
+                        <strong class="sunrise-time">Sunrise: <span id='sunriseTime'></span></strong>
                         <br>
-                        <strong class="first-light">First light: <span id="firstLight">6:00am</span></strong>
+                        <strong class="first-light">First light: <span id="firstLight"></span></strong>
                         </div>
                     </div>
                     <!-- column -->
@@ -76,10 +76,10 @@
                     <div id="sunset" class="column sunset">
                         <div class=" -">
                         <h3 class="is-size-3">Sunset Today</h3>
-                        <img src="./Assets/images/sun-set-icon.png" alt="sunrise image" class="sunrise" style="max-width: 160px;">
-                        <strong class="sunrise-time">Sunset: <span id='sunsetTime'>8:00pm</span></strong>
+                        <img src="./Assets/images/sun-set-icon.png" alt="sunset image" class="sunset sunsetImage" style="max-width: 160px;">
+                        <strong class="sunset-time">Sunset: <span id='sunsetTime'></span></strong>
                         <br>
-                        <strong class="first-light">Last light: <span id="lastLight">8:30pm</span></strong>
+                        <strong class="last-light">Last light: <span id="lastLight"></span></strong>
                         </div>
                     </div>
                 <!-- column -->
@@ -92,7 +92,8 @@
 
         <div class="dayLength-container">
 
-            <div class="dayLength">Day Length Today: 12 hours, 40 minutes</div>
+            <div id='dayLength' class="dayLength"></div>
+            
             
         </div>
     </main>

@@ -15,6 +15,14 @@ body {
     height: 100vh;
 }
 
+.hero-body {
+    padding: 10px;
+    border-style: double ;
+    border-color: black;
+    border-width: 10px
+    ;
+}
+
 .city {
     position: relative;
     border: none;
@@ -41,6 +49,10 @@ button:hover {
     color: white;
 }
 
+#main-page {
+    display: none;
+}
+
 #cityName {
     color:cyan;
 }
@@ -59,11 +71,15 @@ button:hover {
 
 .dayLength {
     background-color: var(--theme);
+    border-bottom: solid;
+    border-color: black;
     width: 50%;
     color: white;
     padding: 5px 0px 5px 0px;
     display: flex;
     justify-content: center;
+    font-size: 30px;
+    color: var(--text-theme);
 }
 
 .sunset {
@@ -71,14 +87,31 @@ button:hover {
     justify-content: end;
 }
 
-.sunrise, .sunset {
-    background-color: var(--theme);
+.sunrise, .sunset { 
+    /* background-color: var(--theme); */
     color: var(--text-theme);
 }
 
-.sunrise-time, .first-light {
+.sunrise-time, .sunset-time, .first-light, .last-light {
     display: flex;
     margin-left: 15px;
+}
+
+img.sunset {
+    background-image: url(../Images/images.jpeg);
+    background-position: center;
+    border-radius: 85px;
+}
+
+img.sunrise {
+    background-image: url(../Images/istockphoto-531253600-612x612.jpg);
+    background-position: center;
+    border-radius: 85px;
+}
+
+strong {
+    color: white;
+    font-size: 20px;
 }
 
 

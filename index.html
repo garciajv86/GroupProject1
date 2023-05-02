@@ -37,6 +37,18 @@
                  </div>
 
             </form>  
+
+            <form id="container2" class="container is-fluid">
+
+                <div class="notification is-info">
+
+                    <input id="city-input2" class="city" type="text" placeholder="City Name">
+
+                    <button id="btn2" class="button" type="button"><i class='fa fa-search' aria-hidden="true"></i></button>
+        
+                 </div>
+
+            </form>  
             
         </div>
 
@@ -82,21 +94,79 @@
                         <strong class="last-light">Last light: <span id="lastLight"></span></strong>
                         </div>
                     </div>
+
+                    
                 <!-- column -->
                 </div>
                 </div>
             <!-- container -->
             </div>
             
+            <div class="dayLength-container">
+
+                <div id='dayLength' class="dayLength"></div>
+                
+                
+            </div>
+
+        </section>
+
+        <!-- section -->
+        <section id='main' class="section">
+
+            <!-- container -->
+            <div class="container">
+                <!-- title with notification grey -->
+                <div class="notification ">
+                    
+                    <h1 class="title has-text-centered	is-size-1	"><span id="cityName2"> </span> </h1>
+                    <h2 class="today has-text-centered	">Sunrise and Sunset Today</h2>
+
+                
+                <!-- title with notification grey -->
+                
+                <div class="columns">
+                <!-- column -->
+                    <div id="sunrise" class="column sunrise">
+                        <div class=" -">
+                        <h3 class="is-size-3">Sunrise Today</h3>
+                        <img src="./Assets/images/apple-touch-icon.png" alt="sunrise image" class="sunrise sunriseImg" style="max-width: 160px;">
+                        <strong class="sunrise-time">Sunrise: <span id='sunriseTime2'></span></strong>
+                        <br>
+                        <strong class="first-light">First light: <span id="firstLight2"></span></strong>
+                        </div>
+                    </div>
+                    <!-- column -->
+                    
+                    <div id="sunset" class="column sunset">
+                        <div class=" -">
+                        <h3 class="is-size-3">Sunset Today</h3>
+                        <img src="./Assets/images/sun-set-icon.png" alt="sunset image" class="sunset sunsetImage" style="max-width: 160px;">
+                        <strong class="sunset-time">Sunset: <span id='sunsetTime2'></span></strong>
+                        <br>
+                        <strong class="last-light">Last light: <span id="lastLight2"></span></strong>
+                        </div>
+                    </div>
+                <!-- column -->
+                </div>
+                </div>
+            <!-- container -->
+            </div>
+              <div class="dayLength-container">
+
+            <div id='dayLength2' class="dayLength"></div>
+            
+            
+        </div>
         </section>
         <!-- section -->
 
-        <div class="dayLength-container">
+        <!-- <div class="dayLength-container">
 
             <div id='dayLength' class="dayLength"></div>
             
             
-        </div>
+        </div> -->
     </main>
 
 

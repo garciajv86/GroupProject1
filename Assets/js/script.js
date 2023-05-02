@@ -28,7 +28,7 @@ function success() {
     })
 
     .then(function (location) {
-      var sunriseSunsetApi = `https://api.sunrisesunset.io/json?lat=${location.lat}&lng=${location.lon}&timezone=UTC&date=today`;
+      var sunriseSunsetApi = `https://api.sunrisesunset.io/json?lat=${location.lat}&lng=${location.lon}&timezone=&date=today`;
 
       return fetch(sunriseSunsetApi);
     })

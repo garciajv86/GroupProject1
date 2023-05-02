@@ -12,15 +12,14 @@
 body {
     background-image: url(../Images/pexels-pixabay-53594.jpg);
     background-size: cover;
-    height: 100vh;
+    height: 100%;
 }
 
 .hero-body {
     padding: 10px;
     border-style: double ;
     border-color: black;
-    border-width: 10px
-    ;
+    border-width: 10px;
 }
 
 .city {
@@ -53,8 +52,8 @@ button:hover {
     display: none;
 }
 
-#cityName {
-    color:cyan;
+#cityName, #cityName2 {
+    color: white;
 }
 
 .today {
@@ -84,7 +83,7 @@ button:hover {
 
 .sunset {
     display: flex;
-    justify-content: end;
+    justify-content: start;
 }
 
 .sunrise, .sunset { 

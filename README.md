@@ -1,13 +1,13 @@
-# Group 6 sunrise sunset app
+# Sunrise and sunset app
 
 ## Description
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+- What was your motivation? - As a user traveling through time zones i would like to know when the sun rises and when the sun sets in the city im currently in and the city im traveling too. 
+- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")- This project was built for users traveling city to city with deferent time zones, i want to quickly be able to check the time from one or two inputs. 
+- What problem does it solve?- Traveling from timezones throughout the day can sometimes be confusing and as developers we wanted to create an app that quickly renders out the city time zones from where you are to where you'll end up.
+- What did you learn?- everything
 
 ## Table of Contents (Optional)
 
@@ -28,17 +28,13 @@ Provide instructions and examples for use. Include screenshots as needed.
 
 To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
 
-    ```md
-    ![alt text](assets/images/screenshot.png)
-    ```
+
+![ss](Assets/Images/live-site-SS.JPG)
+
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+Alex Marquez 
 
 ## License
 

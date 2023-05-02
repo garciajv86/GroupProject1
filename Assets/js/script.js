@@ -23,8 +23,6 @@ var cityName = document.getElementById("cityName");
 var cityName2 = document.getElementById('cityName2');
 var dayLength = document.getElementById("dayLength");
 var dayLength2 = document.getElementById('dayLength2');
-var dayLength3 = document.getElementById('dayLength3');
-var dayLength4 = document.getElementById('dayLength4');
 var mainPage = document.getElementById("main-page");
 //$ curl 'https://api.ipgeolocation.io/ipgeo?apiKey=API_KEY'
 
@@ -120,7 +118,6 @@ function success2() {
         firstLight2.textContent = data.results.first_light;
         sunsetTime2.textContent = data.results.sunset;
         lastLight2.textContent = data.results.last_light;
-        dayLength2.textContent = `Day Length Today: ${data.results.day_length}`;
         mainPage.style.display = "block";
       });
   }
@@ -177,7 +174,6 @@ function success2() {
         firstLight3.textContent = data.results.first_light;
         sunsetTime3.textContent = data.results.sunset;
         lastLight3.textContent = data.results.last_light;
-        dayLength3.textContent = `Day Length Today: ${data.results.day_length}`;
         mainPage.style.display = "block";
       });
   }
@@ -232,7 +228,7 @@ function success2() {
         firstLight4.textContent = data.results.first_light;
         sunsetTime4.textContent = data.results.sunset;
         lastLight4.textContent = data.results.last_light;
-        dayLength4.textContent = `Day Length Today: ${data.results.day_length}`;
+        dayLength2.textContent = `Day Length Tomorrow: ${data.results.day_length}`;
         mainPage.style.display = "block";
       });
   }

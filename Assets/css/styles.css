@@ -9,6 +9,17 @@
     padding: 0;
 }
 
+.night{
+    background-image: url(../Images/fantastic-sunset-over-ocean-the-sun-goes-down-ove-2022-01-28-07-44-34-utc.jpg)
+    
+}
+
+.day {
+    background-image: url(../Images/pexels-pixabay-53594.jpg);
+}
+
+
+
 body {
     background-image: url(../Images/pexels-pixabay-53594.jpg);
     background-size: cover;

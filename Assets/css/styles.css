@@ -53,9 +53,9 @@ button:hover {
     display: none;
 }
 
-#cityName, #cityName2 {
+/* #cityName, #cityName2 {
     color: black;
-}
+} */
 
 .today {
     color: var(--text-theme);

@@ -55,6 +55,19 @@ button:hover {
     background-color: aqua;
 }
 
+.recentSearch, .recentSearch2 {
+    color:var(--text-theme);
+}
+
+.lastCitySearch, .lastCitySearch2 {
+    position:absolute;
+    top: 50px;
+    left: 185px;
+    background-color: lightgrey;
+    border-radius: 5px;
+    box-shadow: 3px 3px 8px 1px;
+}
+
 .notification {
     background-color: var(--theme);
     color: white;

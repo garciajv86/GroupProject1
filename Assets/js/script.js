@@ -229,7 +229,7 @@ function success4() {
       firstLight4.textContent = data.results.first_light;
       sunsetTime4.textContent = data.results.sunset;
       lastLight4.textContent = data.results.last_light;
-      
+
       mainPage.style.display = "block";
     });
 }

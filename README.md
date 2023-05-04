@@ -9,9 +9,7 @@ Provide a short description explaining the what, why, and how of your project. U
 - What problem does it solve?- Traveling from timezones throughout the day can sometimes be confusing and as developers we wanted to create an app that quickly renders out the city time zones from where you are to where you'll end up.
 - What did you learn?- everything
 
-## Table of Contents (Optional)
-
-If your README is long, add a table of contents to make it easy for users to find what they need.
+## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
@@ -20,44 +18,37 @@ If your README is long, add a table of contents to make it easy for users to fin
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+No installation needed.
 
-## Usage
+## Link to site
+ https://garciajv86.github.io/SunsetSunriseTimes/
 
-Provide instructions and examples for use. Include screenshots as needed.
-
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
+## Screenshot
 
 ![ss](Assets/Images/live-site-SS.JPG)
 
 
 ## Credits
 
-Alex Marquez 
+Alex Marquez, Joshua Garcia, Kyla Wise, Patrick McPartland
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
-
----
-
-🏆 The previous sections are the bare minimum, and your project will ultimately determine the content of this document. You might also want to consider adding the following sections.
+MIT LICENSE
 
 ## Badges
 
-![badmath](https://img.shields.io/github/languages/top/lernantino/badmath)
-
-Badges aren't necessary, per se, but they demonstrate street cred. Badges let other developers know that you know what you're doing. Check out the badges hosted by [shields.io](https://shields.io/). You may not understand what they all represent now, but you will in time.
+![badmath](https://img.shields.io/badge/-HTML-red)
+![badmath](https://img.shields.io/badge/-CSS-blue)
+![badmath](https://img.shields.io/badge/-JavaScript-yellow)
+![badmath](https://img.shields.io/badge/-Bulma-green)
+![badmath](https://img.shields.io/badge/-FontAwsome-blue)
+![badmath](https://img.shields.io/badge/-Bootstrap-blueviolet)
+![badmath](https://img.shields.io/badge/-jQuery-blue)
+![badmath](https://img.shields.io/badge/-Sass-ff69b4)
 
 ## Features
 
-If your project has a lot of features, list them here.
-
-## How to Contribute
-
-If you created an application or package and would like other developers to contribute it, you can include guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own if you'd prefer.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them here.
+- Able to search current city
+- Able to  search planned destination city
+- Able to search last city searched for previous searched for both current city and destination city and click the button for quick search

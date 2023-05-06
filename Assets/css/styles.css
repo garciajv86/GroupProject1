@@ -76,10 +76,6 @@ button:hover {
   display: none;
 }
 
-/* #cityName, #cityName2 {
-    color: black;
-} */
-
 .today {
   color: var(--text-theme);
   font-size: 28px;
@@ -110,7 +106,6 @@ button:hover {
 
 .sunrise,
 .sunset {
-  /* background-color: var(--theme); */
   color: var(--text-theme);
 }
 

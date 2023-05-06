@@ -109,7 +109,6 @@ function success2() {
       return response.json();
     })
     .then(function (data) {
-      console.log(data);
       return data[0];
     })
 
@@ -124,8 +123,6 @@ function success2() {
       return Response.json();
     })
     .then((data) => {
-      console.log(data);
-      console.log(data.results.sunrise);
       sunriseTime2.textContent = data.results.sunrise;
       firstLight2.textContent = data.results.first_light;
       sunsetTime2.textContent = data.results.sunset;
@@ -174,8 +171,6 @@ function success3() {
       return Response.json();
     })
     .then((data) => {
-      console.log(data);
-      console.log(data.results.sunrise);
       sunriseTime3.textContent = data.results.sunrise;
       firstLight3.textContent = data.results.first_light;
       sunsetTime3.textContent = data.results.sunset;
@@ -223,8 +218,6 @@ function success4() {
       return Response.json();
     })
     .then((data) => {
-      console.log(data);
-      console.log(data.results.sunrise);
       sunriseTime4.textContent = data.results.sunrise;
       firstLight4.textContent = data.results.first_light;
       sunsetTime4.textContent = data.results.sunset;
@@ -254,6 +247,7 @@ historySearchBtn.addEventListener("click", function (event) {
   document.getElementById("city-input").value = historySearchBtn.innerHTML;
 
   navigator.geolocation.getCurrentPosition(success, error);
+  navigator.geolocation.getCurrentPosition(success3, error);
 });
 
 // Event Listener For Search History Button 2
@@ -264,9 +258,9 @@ historySearchBtn2.addEventListener("click", function (event) {
   document.getElementById("city-input2").value = historySearchBtn2.innerHTML;
 
   navigator.geolocation.getCurrentPosition(success2, error);
+  navigator.geolocation.getCurrentPosition(success4, error);
 });
 
-//changes the background image of day and night, not sunset (maybe delete).
 var d = new Date();
 var n = d.getHours();
 if (n > 19 || n < 6)
